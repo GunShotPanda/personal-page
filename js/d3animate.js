@@ -19,7 +19,6 @@
         // title
         function intro() {
             var mask, text;
-
             (function() {
                 mask = svg.append('clipPath')
                     .attr('id', 'mask');
@@ -1151,8 +1150,15 @@
                 d3.select('#pathmask2').remove();
                 mask2.remove();
 
-                //intro();
+            display();
             }
+            //使主页显示
+            function display() {
+                $(document).ready(function () {
+                        $("#father").fadeIn(2000)
+
+                })
+            };
         }
 
         intro();
